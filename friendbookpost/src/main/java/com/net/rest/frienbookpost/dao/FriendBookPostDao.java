@@ -1,5 +1,6 @@
 package com.net.rest.frienbookpost.dao;
 
+import java.util.List;
 import java.util.logging.Logger;
 
 import com.net.rest.frienbookpost.dto.FriendBookPostDTO;
@@ -17,7 +18,13 @@ public class FriendBookPostDao {
 	
 	private static final Logger logger = Logger.getLogger("FriendBookPostDao");
 
-	public FriendBookPostDTO saveFriendBookPost(FriendBookPostDTO request) throws FriendBookPostDaoException{
+	public FriendBookPostDTO createFriendBookPost(FriendBookPostDTO request) throws FriendBookPostDaoException{
+		FriendBookPostDTO response = null;
+		
+
+		return response;
+	}
+	public FriendBookPostDTO updateFriendBookPost(FriendBookPostDTO request) throws FriendBookPostDaoException{
 		FriendBookPostDTO response = null;
 		
 
@@ -29,6 +36,13 @@ public class FriendBookPostDao {
 
 		return response;
 	}
+	public List<FriendBookPostDTO> getFriendBookPostList(FriendBookPostDTO request) throws FriendBookPostDaoException{
+		List<FriendBookPostDTO> response = null;
+		
+
+		return response;
+	}
+
 	public String deleteFriendBookPost(Integer id) throws FriendBookPostDaoException{
 		String response = null;
 		
