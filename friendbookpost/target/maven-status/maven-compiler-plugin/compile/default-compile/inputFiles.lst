@@ -2,6 +2,7 @@ C:\Training\microservices\source\2019-04-friendbook-posts\friendbookpost\src\mai
 C:\Training\microservices\source\2019-04-friendbook-posts\friendbookpost\src\main\java\com\net\rest\frienbookpost\util\FriendBookPostConstants.java
 C:\Training\microservices\source\2019-04-friendbook-posts\friendbookpost\src\main\java\com\net\rest\frienbookpost\dto\FriendBookPostDTO.java
 C:\Training\microservices\source\2019-04-friendbook-posts\friendbookpost\src\main\java\com\net\rest\frienbookpost\service\FriendBookPostService.java
+C:\Training\microservices\source\2019-04-friendbook-posts\friendbookpost\src\main\java\com\net\rest\frienbookpost\controller\FriendBookPostController.java
 C:\Training\microservices\source\2019-04-friendbook-posts\friendbookpost\src\main\java\com\net\rest\frienbookpost\dao\FriendBookPostDao.java
 C:\Training\microservices\source\2019-04-friendbook-posts\friendbookpost\src\main\java\com\net\rest\frienbookpost\exception\FriendBookPostDaoException.java
 C:\Training\microservices\source\2019-04-friendbook-posts\friendbookpost\src\main\java\com\net\rest\frienbookpost\exception\FriendBookPostServiceException.java
