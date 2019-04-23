@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-import com.net.rest.frienbookpost.dto.FriendBookPostDTO;
 import com.net.rest.frienbookpost.dto.FriendBookPostRequest;
 import com.net.rest.frienbookpost.dto.FriendBookPostResponse;
 import com.net.rest.frienbookpost.exception.FriendBookPostException;
@@ -48,11 +47,11 @@ public class FriendBookPostController {
 		}
 		return response;
 	}
-	@RequestMapping(value = "/cid/createFriendBookPost", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
+	@RequestMapping(value = "/cid/updateFriendBookPost", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
 	@ResponseStatus(HttpStatus.OK)
 	@ResponseBody
 	public FriendBookPostResponse updateFriendBookPost(@RequestBody FriendBookPostRequest request) {
-		logger.info("Inside createFriendBookPost.");
+		logger.info("Inside updateFriendBookPost.");
 		logger.info(request.toString());
 		FriendBookPostResponse response= new FriendBookPostResponse();
 		FriendBookPostService postService = new FriendBookPostService();
@@ -67,6 +66,62 @@ public class FriendBookPostController {
 		return response;
 	}
 	
+	
+	@RequestMapping(value = "/cid/deleteFriendBookPost", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
+	@ResponseStatus(HttpStatus.OK)
+	@ResponseBody
+	public FriendBookPostResponse deleteFriendBookPost(@RequestBody FriendBookPostRequest request) {
+		logger.info("Inside deleteFriendBookPost.");
+		logger.info(request.toString());
+		FriendBookPostResponse response= new FriendBookPostResponse();
+		FriendBookPostService postService = new FriendBookPostService();
+		try{
+			
+			response.setStatusMsg(postService.deleteFriendBookPost(request.getFriendBookPost()));
+		}
+		catch(FriendBookPostException e){
+			logger.error("Exception details as below" , e);
+			response.setStatusMsg("Error while deleting friend book post");
+		}
+		return response;
+	}
+	@RequestMapping(value = "/cid/getFriendBookPost", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
+	@ResponseStatus(HttpStatus.OK)
+	@ResponseBody
+	public FriendBookPostResponse getFriendBookPost(@RequestBody FriendBookPostRequest request) {
+		logger.info("Inside getFriendBookPost.");
+		logger.info(request.toString());
+		FriendBookPostResponse response= new FriendBookPostResponse();
+		FriendBookPostService postService = new FriendBookPostService();
+		try{
+			response.setFriendBookPost(postService.getFriendBookPost(request.getFriendBookPost().getId()));
+			response.setStatusMsg(postService.deleteFriendBookPost(request.getFriendBookPost()));
+		}
+		catch(FriendBookPostException e){
+			logger.error("Exception details as below" , e);
+			response.setStatusMsg("Error while getting friend book post");
+		}
+		return response;
+	}
+	
+	@RequestMapping(value = "/cid/getFriendBookPostList", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
+	@ResponseStatus(HttpStatus.OK)
+	@ResponseBody
+	public FriendBookPostResponse getFriendBookPostList(@RequestBody FriendBookPostRequest request) {
+		logger.info("Inside getFriendBookPostList.");
+		logger.info(request.toString());
+		FriendBookPostResponse response= new FriendBookPostResponse();
+		FriendBookPostService postService = new FriendBookPostService();
+		try{
+			response.setFriendBookPostList(postService.getFriendBookPostList(request.getFriendBookPost()));
+			response.setStatusMsg(postService.deleteFriendBookPost(request.getFriendBookPost()));
+		}
+		catch(FriendBookPostException e){
+			logger.error("Exception details as below" , e);
+			response.setStatusMsg("Error while getting friend book post");
+		}
+		return response;
+	}
 	
 	
 	
