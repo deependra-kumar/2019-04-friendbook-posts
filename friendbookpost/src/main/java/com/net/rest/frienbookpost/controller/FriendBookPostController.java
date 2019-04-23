@@ -29,7 +29,7 @@ import com.net.rest.frienbookpost.service.FriendBookPostService;
 public class FriendBookPostController {
 	
 	private static final Logger logger = Logger.getLogger(FriendBookPostController.class);
-	@RequestMapping(value = "/cid/createFriendBookPost", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
+	@RequestMapping(value = "/post/createFriendBookPost", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
 	@ResponseStatus(HttpStatus.OK)
 	@ResponseBody
 	public FriendBookPostResponse createFriendBookPost(@RequestBody FriendBookPostRequest request) {
@@ -47,7 +47,7 @@ public class FriendBookPostController {
 		}
 		return response;
 	}
-	@RequestMapping(value = "/cid/updateFriendBookPost", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
+	@RequestMapping(value = "/post/updateFriendBookPost", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
 	@ResponseStatus(HttpStatus.OK)
 	@ResponseBody
 	public FriendBookPostResponse updateFriendBookPost(@RequestBody FriendBookPostRequest request) {
@@ -67,7 +67,7 @@ public class FriendBookPostController {
 	}
 	
 	
-	@RequestMapping(value = "/cid/deleteFriendBookPost", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
+	@RequestMapping(value = "/post/deleteFriendBookPost", method = RequestMethod.DELETE, produces = "application/json", consumes = "application/json")
 	@ResponseStatus(HttpStatus.OK)
 	@ResponseBody
 	public FriendBookPostResponse deleteFriendBookPost(@RequestBody FriendBookPostRequest request) {
@@ -85,7 +85,7 @@ public class FriendBookPostController {
 		}
 		return response;
 	}
-	@RequestMapping(value = "/cid/getFriendBookPost", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
+	@RequestMapping(value = "/post/getFriendBookPost", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
 	@ResponseStatus(HttpStatus.OK)
 	@ResponseBody
 	public FriendBookPostResponse getFriendBookPost(@RequestBody FriendBookPostRequest request) {
@@ -104,7 +104,7 @@ public class FriendBookPostController {
 		return response;
 	}
 	
-	@RequestMapping(value = "/cid/getFriendBookPostList", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
+	@RequestMapping(value = "/post/getFriendBookPostList", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
 	@ResponseStatus(HttpStatus.OK)
 	@ResponseBody
 	public FriendBookPostResponse getFriendBookPostList(@RequestBody FriendBookPostRequest request) {
