@@ -132,11 +132,10 @@
                             "required": false,
                             "schema": {
                                 "type": "object",
-                                "id": "",
-                                "postMsg": "",
+                                "postMessage": "",
                                 "lastupdated": "",
                                 "status": "",
-                                "userid": ""
+                                "userMailid": ""
                             }
                         }
                     },
@@ -195,11 +194,10 @@
         "schemas": {
             "NewSchema": {
                 "type": "object",
-                "id": "",
-                "postMsg": "",
+                "postMessage": "",
                 "lastupdated": "",
                 "status": "",
-                "userid": ""
+                "userMailid": ""
             }
         },
         "requestBodies": {
