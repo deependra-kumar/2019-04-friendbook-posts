@@ -15,7 +15,7 @@ services:
     networks:
       - postsnet
     ports:
-      - 8080
+      - 8096
 
   postsdb:
     image: mongo:4.0.9-xenial
