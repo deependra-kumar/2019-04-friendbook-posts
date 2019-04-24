@@ -1,6 +1,6 @@
 FROM maven:3.6.1-jdk-8-alpine AS buildstage
 WORKDIR /postservice
-COPY friendBookPostMongoDb .
+COPY friendbookpost .
 RUN mvn package
 
 FROM openjdk:8-jre-alpine3.9
