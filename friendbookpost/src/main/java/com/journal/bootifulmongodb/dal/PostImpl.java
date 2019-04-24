@@ -1,4 +1,4 @@
-package com.journaldev.bootifulmongodb.dal;
+package com.journal.bootifulmongodb.dal;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Repository;
 
-import com.journaldev.bootifulmongodb.model.Post;
+import com.journal.bootifulmongodb.model.Post;
 
 @Repository
 public class PostImpl implements IPost {

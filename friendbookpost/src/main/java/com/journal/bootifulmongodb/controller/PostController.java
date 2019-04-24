@@ -1,4 +1,4 @@
-package com.journaldev.bootifulmongodb.controller;
+package com.journal.bootifulmongodb.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -9,12 +9,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.journaldev.bootifulmongodb.dal.IPost;
-import com.journaldev.bootifulmongodb.dal.PostRepository;
-import com.journaldev.bootifulmongodb.model.Post;
+import com.journal.bootifulmongodb.dal.IPost;
+import com.journal.bootifulmongodb.dal.PostRepository;
+import com.journal.bootifulmongodb.model.Post;
 
 @RestController
 @RequestMapping(value = "/")

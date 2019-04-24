@@ -1,10 +1,6 @@
-C:\Training\microservices\source\2019-04-friendbook-posts\friendbookpost\src\main\java\com\net\rest\frienbookpost\exception\FriendBookPostException.java
-C:\Training\microservices\source\2019-04-friendbook-posts\friendbookpost\src\main\java\com\net\rest\frienbookpost\util\FriendBookPostConstants.java
-C:\Training\microservices\source\2019-04-friendbook-posts\friendbookpost\src\main\java\com\net\rest\frienbookpost\dto\FriendBookPostDTO.java
-C:\Training\microservices\source\2019-04-friendbook-posts\friendbookpost\src\main\java\com\net\rest\frienbookpost\service\FriendBookPostService.java
-C:\Training\microservices\source\2019-04-friendbook-posts\friendbookpost\src\main\java\com\net\rest\frienbookpost\controller\FriendBookPostController.java
-C:\Training\microservices\source\2019-04-friendbook-posts\friendbookpost\src\main\java\com\net\rest\frienbookpost\dto\FriendBookPostRequest.java
-C:\Training\microservices\source\2019-04-friendbook-posts\friendbookpost\src\main\java\com\net\rest\frienbookpost\dto\FriendBookPostResponse.java
-C:\Training\microservices\source\2019-04-friendbook-posts\friendbookpost\src\main\java\com\net\rest\frienbookpost\dao\FriendBookPostDao.java
-C:\Training\microservices\source\2019-04-friendbook-posts\friendbookpost\src\main\java\com\net\rest\frienbookpost\exception\FriendBookPostDaoException.java
-C:\Training\microservices\source\2019-04-friendbook-posts\friendbookpost\src\main\java\com\net\rest\frienbookpost\exception\FriendBookPostServiceException.java
+C:\Users\kumdeepe\Documents\workspace-sts-3.9.8.RELEASE\friendbookpost\src\main\java\com\journal\bootifulmongodb\dal\PostImpl.java
+C:\Users\kumdeepe\Documents\workspace-sts-3.9.8.RELEASE\friendbookpost\src\main\java\com\journal\bootifulmongodb\dal\PostRepository.java
+C:\Users\kumdeepe\Documents\workspace-sts-3.9.8.RELEASE\friendbookpost\src\main\java\com\journal\bootifulmongodb\controller\PostController.java
+C:\Users\kumdeepe\Documents\workspace-sts-3.9.8.RELEASE\friendbookpost\src\main\java\com\example\demo\FriendBookPostApplication.java
+C:\Users\kumdeepe\Documents\workspace-sts-3.9.8.RELEASE\friendbookpost\src\main\java\com\journal\bootifulmongodb\model\Post.java
+C:\Users\kumdeepe\Documents\workspace-sts-3.9.8.RELEASE\friendbookpost\src\main\java\com\journal\bootifulmongodb\dal\IPost.java
