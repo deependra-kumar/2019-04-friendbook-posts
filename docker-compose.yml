@@ -1,0 +1,28 @@
+version: '3.4'
+
+networks:
+  postsnet:
+
+volumes:
+  postsdata:
+
+services:
+
+  postssvc:
+    build:
+      dockerfile: postsService.Dockerfile
+      context: .
+    networks:
+      - postsnet
+    ports:
+      - 8080
+
+  postsdb:
+    image: mongo:4.0.9-xenial
+    networks: 
+      - postsnet
+    volumes:
+      - postsdata:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mspost
+      - MONGO_INITDB_ROOT_PASSWORD=mspost
