@@ -12,6 +12,18 @@ public class Post {
     private String userMailId;
     private String lastUpdated;
     private String status;
+	public String getPostMessage() {
+		return postMessage;
+	}
+	public void setPostMessage(String postMessage) {
+		this.postMessage = postMessage;
+	}
+	public String getUserMailId() {
+		return userMailId;
+	}
+	public void setUserMailId(String userMailId) {
+		this.userMailId = userMailId;
+	}
 	public String getLastUpdated() {
 		return lastUpdated;
 	}
@@ -24,18 +36,8 @@ public class Post {
 	public void setStatus(String status) {
 		this.status = status;
 	}
-	public String getTextMessage() {
-		return postMessage;
-	}
-	public void setTextMessage(String postMessage) {
-		this.postMessage = postMessage;
-	}
-	public String getUserMailId() {
-		return userMailId;
-	}
-	public void setUserMailId(String userMailId) {
-		this.userMailId = userMailId;
-	}
+
+    
 
     
 }

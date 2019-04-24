@@ -1,13 +1,13 @@
-package com.example.demo;
+package com.journal.bootifulmongodb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FriendBookPostApplication {
+public class BootMongoDBApp {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FriendBookPostApplication.class, args);
+		SpringApplication.run(BootMongoDBApp.class, args);
 	}
 
 }
