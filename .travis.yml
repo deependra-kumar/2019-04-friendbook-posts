@@ -9,5 +9,5 @@ after_success:
   - docker image ls
   - docker image tag friendbookpost deependra-kumar/fbpost
   - docker login -u #DOCKER_USERID -p $DOCKER_PASSWORD
-  - docker image push $DOCKER_USERI/fbpost
+  - docker image push $DOCKER_USERID/fbpost
   - docker logout
