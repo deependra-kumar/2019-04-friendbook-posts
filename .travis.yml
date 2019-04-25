@@ -7,7 +7,7 @@ script:
   - docker-compose ps
 after_success:
   - docker image ls
-  - docker image tag friendbookpost deependra-kumar/fbpost
+  - docker image tag friendbookpost #DOCKER_USERID/fbpost
   - docker login -u #DOCKER_USERID -p $DOCKER_PASSWORD
   - docker image push $DOCKER_USERID/fbpost
   - docker logout
