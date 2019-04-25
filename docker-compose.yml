@@ -12,6 +12,7 @@ services:
     build:
       dockerfile: postsService.Dockerfile
       context: .
+    image: friendbookpost
     networks:
       - postsnet
     ports:

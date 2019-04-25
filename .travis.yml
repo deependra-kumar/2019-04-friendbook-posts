@@ -6,4 +6,8 @@ script:
   - docker-compose up -d
   - docker-compose ps
 after_success:
-  - dosker image ls  
+  - docker image ls
+  - docker image tag friendbookpost deependra-kumar/fbpost
+  - docker login -u #DOCKER_USERID -p $DOCKER_PASSWORD
+  - docker image push $DOCKER_USERI/fbpost
+  - docker logout
